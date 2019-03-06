@@ -1,1 +1,23 @@
-<!-- Twój kod -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <form action='/cookie/set' method="post">
+        <label>
+            Enter your name
+        </label>
+        <input name='name' />
+        <button type='submit'>Submit</button>
+    </form>
+
+    <button onclick="location.href='/cookie/show';">Show cookie</button>
+    <button onclick="location.href='/cookie/check';">Check cookie</button>
+</body>
+</html>
